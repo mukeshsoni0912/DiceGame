@@ -1,0 +1,20 @@
+<div class="circle" *ngIf="randomNum && pointTable"> {{randomNum}} </div>
+
+<button *ngIf="rollDiceShown && pointTable" (click)="rollDice()"><img src="assets/images/dice.jpg" alt="dice"></button>
+
+<ng-container>
+<table id="player">
+  <tr>
+    <th>Player Name</th>
+    <th>Total Score</th>
+    <th>Rank</th>
+  </tr>
+  <tr [ngClass]="{'green' : player.isActive, 'red' : !player.isActive}" *ngFor="let player of playersArr">
+    <td >{{player.name}}</td>
+    <td>{{player.score}}</td>
+    <td>{{rankingObj[player.name]}}</td>
+  </tr>
+ </table>
+
+</ng-container>
+

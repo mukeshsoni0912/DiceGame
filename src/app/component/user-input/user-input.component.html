@@ -1,0 +1,12 @@
+<h1>Welcome To Dice Game</h1>
+
+<div *ngIf="!playersArr.length">
+<span class="label">Please enter the Number of players</span>
+<input type="text" name="players" [(ngModel)]="totalPlayers">
+<br>
+<span class="label">Points to accumulate</span>
+<input type="text" name="totalPoints" [(ngModel)]="accumulatePoints">
+<br>
+<button type="submit" (click)="start()"> Start</button>
+</div>
+<app-dice-home *ngIf="playersArr.length" [playersArr]="playersArr" [accumulatePoints]= "accumulatePoints" ></app-dice-home>

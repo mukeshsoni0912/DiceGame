@@ -1,0 +1,54 @@
+.green{
+	background : #4CAF50;
+}
+
+.red{
+	background : red;
+}
+
+#player {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#player td, #player th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+img{
+	height: 125px
+}
+
+button{
+	position: relative;
+	left: 40%;
+	margin-bottom: 2%;
+}
+
+.circle {
+  height: 125px;
+  width: 125px;
+  position: relative;
+  left: 40%;
+  line-height: 125px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  background: #4CAF50;
+  margin-bottom: 2%
+}
+
+/*#player tr:nth-child(even){background-color: #f2f2f2;}
+
+#player tr:hover {background-color: #ddd;}*/
+
+#player th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
